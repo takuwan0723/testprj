@@ -26,3 +26,4 @@ UserSettings/EditorUserSettings.asset
 /Logs
 /UserSettings
 /.vs/testprj/v17
+*.json
