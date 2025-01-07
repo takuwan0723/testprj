@@ -8,6 +8,20 @@ public class AdjustColliderSize : MonoBehaviour
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
 
-        collider.size = spriteRenderer.bounds.size;
+        // スプライトのBoundsを取得
+        Bounds spriteBounds = spriteRenderer.bounds;
+
+        // 一時変数にBounds.sizeをコピー
+        Vector3 scaledSize = spriteBounds.size;
+
+        // TransformでlocalScaleされていた場合を考慮
+        // Transformでのサイズ変更は極力行い方針にしたため、コメントアウト
+        //if(transform.localScale != Vector3.one)
+        //{
+        //    scaledSize = transform.localScale;
+        //}
+
+        // Boundsをコライダーのサイズに設定
+        collider.size = scaledSize;
     }
 }
