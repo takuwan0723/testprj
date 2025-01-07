@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
 
         // 画面幅を取得し、speedを計算
         float screenWidth = Screen.width;
-        speed = screenWidth / 5f; // 5秒で画面横断
+        speed = screenWidth / 300f; // 60f*5秒で画面横断
         
         CustomLogger.LogPlayer("画面幅:" + screenWidth);
         CustomLogger.LogPlayer("移動速度:" + speed);
