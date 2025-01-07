@@ -13,3 +13,9 @@ obj/
 
 # Unity3D generated meta files
 *.meta
+ProjectSettings/TimelineSettings.asset
+UserSettings/EditorUserSettings.asset
+UserSettings/EditorUserSettings.asset
+UserSettings/EditorUserSettings.asset
+/UserSettings
+UserSettings/EditorUserSettings.asset
